@@ -1,0 +1,10 @@
+Package: vinelandscoring
+Type: Package
+Title: Vineland Scoring
+Version: 0.1.0
+Author: Owen Ziwen Tong
+Maintainer: The package maintainer <owen.tong@sydney.edu.au>
+Description: This package allows for automated scoring of Vineland Forms. This includes vineland comprehnsive interview and parent caregiver forms.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
