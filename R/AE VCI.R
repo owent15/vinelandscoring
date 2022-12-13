@@ -1,7 +1,8 @@
 #Age Equivalents for Vineland Parent Caregiver
 VCIAERecFunc <- function(vci_rec_total_raw_r){
   score <- c()
-        if(vci_rec_total_raw_r==0){score<-"0:0"}
+  if(is.na(vci_rec_total_raw_r)){score<-NA}
+   else if(vci_rec_total_raw_r==0){score<-"0:0"}
    else if(vci_rec_total_raw_r==1){score<-"0:0"}
    else if(vci_rec_total_raw_r==2){score<-"0:0"}
    else if(vci_rec_total_raw_r==3){score<-"0:0"}
@@ -83,6 +84,8 @@ VCIAERecFunc <- function(vci_rec_total_raw_r){
   else{score <- NA}
   return(score)
 }
+
+VCIAERecFunc(78)
 
 
 VCIAEExpFunc <- function(vci_exp_total_raw_r){
