@@ -1,6 +1,6 @@
 #Age Equivalents for Vineland Parent Caregiver
 VCIAERecFunc <- function(vci_rec_total_raw_r){
-  score <- c()
+    score <- c()   
   if(is.na(vci_rec_total_raw_r)){score<-NA}
    else if(vci_rec_total_raw_r==0){score<-"0:0"}
    else if(vci_rec_total_raw_r==1){score<-"0:0"}
@@ -89,8 +89,9 @@ VCIAERecFunc(78)
 
 
 VCIAEExpFunc <- function(vci_exp_total_raw_r){
-  score <- c()
-  if(vci_exp_total_raw_r==0){score<-"0:0"}
+    score <- c()   
+    if(is.na(vci_exp_total_raw_r)){score<-NA}
+  else if(vci_exp_total_raw_r==0){score<-"0:0"}
   else if(vci_exp_total_raw_r==1){score<-"0:0"}
   else if(vci_exp_total_raw_r==2){score<-"0:0"}
   else if(vci_exp_total_raw_r==3){score<-"0:0"}
@@ -194,8 +195,9 @@ VCIAEExpFunc <- function(vci_exp_total_raw_r){
 }
 
 VCIAEWritFunc <- function(vci_writ_total_raw_r){
-  score <- c()
-  if(vci_writ_total_raw_r==0){score<-"<3:0"}
+    score <- c() 
+    if(is.na(vci_writ_total_raw_r)){score<-NA}
+  else if(vci_writ_total_raw_r==0){score<-"<3:0"}
   else if(vci_writ_total_raw_r==1){score<-"<3:0"}
   else if(vci_writ_total_raw_r==2){score<-"<3:0"}
   else if(vci_writ_total_raw_r==3){score<-"<3:0"}
@@ -277,8 +279,9 @@ VCIAEWritFunc <- function(vci_writ_total_raw_r){
 }
 
 VCIAEPerFunc <- function(vci_per_total_raw_r){
-  score <- c()
-  if(vci_per_total_raw_r==0){score<-"0:0"}
+    score <- c()  
+    if(is.na(vci_per_total_raw_r)){score<-NA}
+  else if(vci_per_total_raw_r==0){score<-"0:0"}
   else if(vci_per_total_raw_r==1){score<-"0:0"}
   else if(vci_per_total_raw_r==2){score<-"0:1"}
   else if(vci_per_total_raw_r==3){score<-"0:3"}
@@ -395,8 +398,9 @@ VCIAEPerFunc <- function(vci_per_total_raw_r){
 
 
 VCIAEDomFunc <- function(vci_dom_total_raw_r){
-  score <- c()
-  if(vci_dom_total_raw_r==0){score<-"<3:0"}
+    score <- c()  
+    if(is.na(vci_dom_total_raw_r)){score<-NA}
+  else if(vci_dom_total_raw_r==0){score<-"<3:0"}
   else if(vci_dom_total_raw_r==1){score<-"<3:0"}
   else if(vci_dom_total_raw_r==2){score<-"<3:0"}
   else if(vci_dom_total_raw_r==3){score<-"<3:0"}
@@ -463,8 +467,9 @@ VCIAEDomFunc <- function(vci_dom_total_raw_r){
 
 #below not done 
 VCIAECmmFunc <- function(vci_cmm_total_raw_r){
-  score <- c()
-  if(vci_cmm_total_raw_r==0){score<-"<3:0"}
+    score <- c()   
+    if(is.na(vci_cmm_total_raw_r)){score<-NA}
+  else if(vci_cmm_total_raw_r==0){score<-"<3:0"}
   else if(vci_cmm_total_raw_r==1){score<-"<3:0"}
   else if(vci_cmm_total_raw_r==2){score<-"<3:0"}
   else if(vci_cmm_total_raw_r==3){score<-"<3:0"}
@@ -586,8 +591,9 @@ VCIAECmmFunc <- function(vci_cmm_total_raw_r){
 }
 
 VCIAEIprFunc <- function(vci_ipr_total_raw_r){
-  score <- c()
-  if(vci_ipr_total_raw_r==0){score<-"0:0"}
+    score <- c()  
+    if(is.na(vci_ipr_total_raw_r)){score<-NA}
+  else if(vci_ipr_total_raw_r==0){score<-"0:0"}
   else if(vci_ipr_total_raw_r==1){score<-"0:0"}
   else if(vci_ipr_total_raw_r==2){score<-"0:0"}
   else if(vci_ipr_total_raw_r==3){score<-"0:0"}
@@ -679,8 +685,9 @@ VCIAEIprFunc <- function(vci_ipr_total_raw_r){
 }
 
 VCIAEPlaFunc <- function(vci_pla_total_raw_r){
-  score <- c()
-  if(vci_pla_total_raw_r==0){score<-"0:0"}
+    score <- c()   
+    if(is.na(vci_pla_total_raw_r)){score<-NA}
+  else if(vci_pla_total_raw_r==0){score<-"0:0"}
   else if(vci_pla_total_raw_r==1){score<-"0:0"}
   else if(vci_pla_total_raw_r==2){score<-"0:0"}
   else if(vci_pla_total_raw_r==3){score<-"0:1"}
@@ -759,8 +766,9 @@ VCIAEPlaFunc <- function(vci_pla_total_raw_r){
 
 
 VCIAECopFunc <- function(vci_cop_total_raw_r){
-  score <- c()
-  if(vci_cop_total_raw_r==0){score<-"<2:0"}
+    score <- c()  
+    if(is.na(vci_cop_total_raw_r)){score<-NA}
+  else if(vci_cop_total_raw_r==0){score<-"<2:0"}
   else if(vci_cop_total_raw_r==1){score<-"<2:0"}
   else if(vci_cop_total_raw_r==2){score<-"<2:0"}
   else if(vci_cop_total_raw_r==3){score<-"<2:0"}
@@ -832,8 +840,9 @@ VCIAECopFunc <- function(vci_cop_total_raw_r){
 }
 
 VCIAEGMFunc <- function(vci_gm_total_raw_r){
-  score <- c()
-  if(vci_gm_total_raw_r==0){score<-"0:0"}
+    score <- c()   
+    if(is.na(vci_gm_total_raw_r)){score<-NA}
+  else if(vci_gm_total_raw_r==0){score<-"0:0"}
   else if(vci_gm_total_raw_r==1){score<-"0:1"}
   else if(vci_gm_total_raw_r==2){score<-"0:3"}
   else if(vci_gm_total_raw_r==3){score<-"0:4"}
@@ -925,8 +934,9 @@ VCIAEGMFunc <- function(vci_gm_total_raw_r){
 }
 
 VCIAEFMFunc <- function(vci_fm_total_raw_r){
-  score <- c()
-  if(vci_fm_total_raw_r==0){score<-"0:0"}
+    score <- c()   
+    if(is.na(vci_fm_total_raw_r)){score<-NA}
+  else if(vci_fm_total_raw_r==0){score<-"0:0"}
   else if(vci_fm_total_raw_r==1){score<-"0:2"}
   else if(vci_fm_total_raw_r==2){score<-"0:3"}
   else if(vci_fm_total_raw_r==3){score<-"0:4"}
