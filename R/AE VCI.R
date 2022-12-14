@@ -843,7 +843,7 @@ VCIAECopFunc <- function(vci_cop_total_raw_r){
 
 VCIAEGMFunc <- function(vabs_total_age, vci_gm_total_raw_r){
     score <- c()   
-    if(is.na(vci_gm_total_raw_r)){score<-NA}
+    if(is.na(vci_gm_total_raw_r)| is.na(vabs_total_age)){score<-NA}
     else if(vabs_total_age >= 2 & vabs_total_age <= 10){
   if(vci_gm_total_raw_r==0){score<-"0:0"}
   else if(vci_gm_total_raw_r==1){score<-"0:1"}
@@ -938,9 +938,10 @@ VCIAEGMFunc <- function(vabs_total_age, vci_gm_total_raw_r){
   return(score)
 }
 
+
 VCIAEFMFunc <- function(vabs_total_age, vci_fm_total_raw_r){
     score <- c()   
-    if(is.na(vci_fm_total_raw_r)){score<-NA}
+    if(is.na(vci_fm_total_raw_r) | is.na(vabs_total_age)){score<-NA}
     else if(vabs_total_age >= 2 & vabs_total_age <= 10){
   if(vci_fm_total_raw_r==0){score<-"0:0"}
   else if(vci_fm_total_raw_r==1){score<-"0:2"}
