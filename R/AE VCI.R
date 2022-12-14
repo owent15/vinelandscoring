@@ -465,7 +465,9 @@ VCIAEDomFunc <- function(vci_dom_total_raw_r){
   return(score)
 }
 
-#below not done 
+VCIAEDomFunc(NA)
+
+
 VCIAECmmFunc <- function(vci_cmm_total_raw_r){
     score <- c()   
     if(is.na(vci_cmm_total_raw_r)){score<-NA}
@@ -839,10 +841,11 @@ VCIAECopFunc <- function(vci_cop_total_raw_r){
   return(score)
 }
 
-VCIAEGMFunc <- function(vci_gm_total_raw_r){
+VCIAEGMFunc <- function(vabs_total_age, vci_gm_total_raw_r){
     score <- c()   
     if(is.na(vci_gm_total_raw_r)){score<-NA}
-  else if(vci_gm_total_raw_r==0){score<-"0:0"}
+    else if(vabs_total_age >= 2 & vabs_total_age <= 10){
+  if(vci_gm_total_raw_r==0){score<-"0:0"}
   else if(vci_gm_total_raw_r==1){score<-"0:1"}
   else if(vci_gm_total_raw_r==2){score<-"0:3"}
   else if(vci_gm_total_raw_r==3){score<-"0:4"}
@@ -930,13 +933,16 @@ VCIAEGMFunc <- function(vci_gm_total_raw_r){
   else if(vci_gm_total_raw_r==85){score<-"8:1"}
   else if(vci_gm_total_raw_r==86){score<-"8:10+"}
   else{score <- NA}
+    }
+    else{score <- NA}
   return(score)
 }
 
-VCIAEFMFunc <- function(vci_fm_total_raw_r){
+VCIAEFMFunc <- function(vabs_total_age, vci_fm_total_raw_r){
     score <- c()   
     if(is.na(vci_fm_total_raw_r)){score<-NA}
-  else if(vci_fm_total_raw_r==0){score<-"0:0"}
+    else if(vabs_total_age >= 2 & vabs_total_age <= 10){
+  if(vci_fm_total_raw_r==0){score<-"0:0"}
   else if(vci_fm_total_raw_r==1){score<-"0:2"}
   else if(vci_fm_total_raw_r==2){score<-"0:3"}
   else if(vci_fm_total_raw_r==3){score<-"0:4"}
@@ -1006,5 +1012,8 @@ VCIAEFMFunc <- function(vci_fm_total_raw_r){
   else if(vci_fm_total_raw_r==67){score<-"8:10"}
   else if(vci_fm_total_raw_r==68){score<-"9:10+"}
   else{score <- NA}
+    }
+    else{score <- NA}
   return(score)
 }
+
