@@ -1,4 +1,605 @@
 ### new function - Personal vscale for Vineland Comprehensive interview form 
+### new function 
+VPC_PerFunc0_0.083 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age >= 0 & vabs_total_age <= 0.083) { 
+    if (total_per_raw==0){score <-11}
+    else if (total_per_raw==1){score <-13}
+    else if (total_per_raw==2){score <-15}
+    else if (total_per_raw==3){score <-16}
+    else if (total_per_raw>=4 & total_per_raw<=7){score <-18}
+    else if (total_per_raw>=8 & total_per_raw<=11){score <-19}
+    else if (total_per_raw>=12 & total_per_raw<=15){score <-20}
+    else if (total_per_raw>=16 & total_per_raw<=20){score <-21}
+    else if (total_per_raw>=21 & total_per_raw<=26){score <-22}
+    else if (total_per_raw>=27 & total_per_raw<=32){score <-23}
+    else if (total_per_raw>=33 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.083_0.166 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.083 & vabs_total_age <= 0.166) { 
+    if (total_per_raw==0){score <-11}
+    else if (total_per_raw==1){score <-12}
+    else if (total_per_raw==2){score <-14}
+    else if (total_per_raw==3){score <-16}
+    else if (total_per_raw==4){score <-17}
+    else if (total_per_raw>=5 & total_per_raw<=8){score <-18}
+    else if (total_per_raw>=9 & total_per_raw<=12){score <-19}
+    else if (total_per_raw>=13 & total_per_raw<=16){score <-20}
+    else if (total_per_raw>=17 & total_per_raw<=21){score <-21}
+    else if (total_per_raw>=22 & total_per_raw<=27){score <-22}
+    else if (total_per_raw>=28 & total_per_raw<=34){score <-23}
+    else if (total_per_raw>=35 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.166_0.25 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.166 & vabs_total_age <= 0.25) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-11}
+    else if (total_per_raw==2){score <-13}
+    else if (total_per_raw==3){score <-15}
+    else if (total_per_raw>=4 & total_per_raw<=5){score <-17}
+    else if (total_per_raw>=6 & total_per_raw<=9){score <-18}
+    else if (total_per_raw>=10 & total_per_raw<=13){score <-19}
+    else if (total_per_raw>=14 & total_per_raw<=17){score <-20}
+    else if (total_per_raw>=18 & total_per_raw<=22){score <-21}
+    else if (total_per_raw>=23 & total_per_raw<=29){score <-22}
+    else if (total_per_raw>=30 & total_per_raw<=37){score <-23}
+    else if (total_per_raw>=38 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.25_0.333 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.25 & vabs_total_age <= 0.333) { 
+    if (total_per_raw==0){score <-10}
+    else if (total_per_raw==1){score <-11}
+    else if (total_per_raw==2){score <-12}
+    else if (total_per_raw==3){score <-15}
+    else if (total_per_raw==4){score <-16}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-17}
+    else if (total_per_raw>=7 & total_per_raw<=10){score <-18}
+    else if (total_per_raw>=11 & total_per_raw<=14){score <-19}
+    else if (total_per_raw>=15 & total_per_raw<=19){score <-20}
+    else if (total_per_raw>=20 & total_per_raw<=24){score <-21}
+    else if (total_per_raw>=25 & total_per_raw<=32){score <-22}
+    else if (total_per_raw>=33 & total_per_raw<=39){score <-23}
+    else if (total_per_raw>=40 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.333_0.416 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.333 & vabs_total_age <= 0.416) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-10}
+    else if (total_per_raw==2){score <-12}
+    else if (total_per_raw==3){score <-14}
+    else if (total_per_raw==4){score <-15}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-16}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-17}
+    else if (total_per_raw>=9 & total_per_raw<=12){score <-18}
+    else if (total_per_raw>=13 & total_per_raw<=16){score <-19}
+    else if (total_per_raw>=17 & total_per_raw<=21){score <-20}
+    else if (total_per_raw>=22 & total_per_raw<=27){score <-21}
+    else if (total_per_raw>=28 & total_per_raw<=34){score <-22}
+    else if (total_per_raw>=35 & total_per_raw<=41){score <-23}
+    else if (total_per_raw>=42 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.416_0.5 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.416 & vabs_total_age <= 0.5) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-10}
+    else if (total_per_raw==2){score <-11}
+    else if (total_per_raw==3){score <-13}
+    else if (total_per_raw==4){score <-14}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-15}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-16}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-17}
+    else if (total_per_raw>=11 & total_per_raw<=14){score <-18}
+    else if (total_per_raw>=15 & total_per_raw<=18){score <-19}
+    else if (total_per_raw>=19 & total_per_raw<=23){score <-20}
+    else if (total_per_raw>=24 & total_per_raw<=29){score <-21}
+    else if (total_per_raw>=30 & total_per_raw<=36){score <-22}
+    else if (total_per_raw>=37 & total_per_raw<=43){score <-23}
+    else if (total_per_raw>=44 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.5_0.583 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.5 & vabs_total_age <= 0.583) { 
+    if (total_per_raw==0){score <-9}
+    else if (total_per_raw==1){score <-10}
+    else if (total_per_raw==2){score <-11}
+    else if (total_per_raw==3){score <-12}
+    else if (total_per_raw>=4 & total_per_raw<=5){score <-14}
+    else if (total_per_raw==6){score <-15}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-16}
+    else if (total_per_raw>=9 & total_per_raw<=11){score <-17}
+    else if (total_per_raw>=12 & total_per_raw<=15){score <-18}
+    else if (total_per_raw>=16 & total_per_raw<=20){score <-19}
+    else if (total_per_raw>=21 & total_per_raw<=25){score <-20}
+    else if (total_per_raw>=26 & total_per_raw<=31){score <-21}
+    else if (total_per_raw>=32 & total_per_raw<=39){score <-22}
+    else if (total_per_raw>=40 & total_per_raw<=46){score <-23}
+    else if (total_per_raw>=47 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.583_0.666 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.583 & vabs_total_age <= 0.666) { 
+    if (total_per_raw==0 & total_per_raw<=1){score <-9}
+    else if (total_per_raw==2){score <-10}
+    else if (total_per_raw==3){score <-11}
+    else if (total_per_raw==4){score <-13}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-14}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-15}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-16}
+    else if (total_per_raw>=11 & total_per_raw<=13){score <-17}
+    else if (total_per_raw>=14 & total_per_raw<=17){score <-18}
+    else if (total_per_raw>=18 & total_per_raw<=21){score <-19}
+    else if (total_per_raw>=22 & total_per_raw<=27){score <-20}
+    else if (total_per_raw>=28 & total_per_raw<=34){score <-21}
+    else if (total_per_raw>=35 & total_per_raw<=40){score <-22}
+    else if (total_per_raw>=41 & total_per_raw<=48){score <-23}
+    else if (total_per_raw>=49 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.666_0.75 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.666 & vabs_total_age <= 0.75) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-9}
+    else if (total_per_raw==2){score <-10}
+    else if (total_per_raw==3){score <-11}
+    else if (total_per_raw==4){score <-12}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-13}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-14}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-15}
+    else if (total_per_raw>=11 & total_per_raw<=12){score <-16}
+    else if (total_per_raw>=13 & total_per_raw<=15){score <-17}
+    else if (total_per_raw>=16 & total_per_raw<=19){score <-18}
+    else if (total_per_raw>=20 & total_per_raw<=25){score <-19}
+    else if (total_per_raw>=26 & total_per_raw<=31){score <-20}
+    else if (total_per_raw>=32 & total_per_raw<=36){score <-21}
+    else if (total_per_raw>=37 & total_per_raw<=43){score <-22}
+    else if (total_per_raw>=44 & total_per_raw<=50){score <-23}
+    else if (total_per_raw>=51 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.75_0.833 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.75 & vabs_total_age <= 0.833) { 
+    if (total_per_raw==0){score <-8}
+    else if (total_per_raw>=1 & total_per_raw<=2){score <-9}
+    else if (total_per_raw==3){score <-10}
+    else if (total_per_raw==4){score <-11}
+    else if (total_per_raw==5){score <-12}
+    else if (total_per_raw>=6 & total_per_raw<=7){score <-13}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-14}
+    else if (total_per_raw>=10 & total_per_raw<=11){score <-15}
+    else if (total_per_raw>=12 & total_per_raw<=14){score <-16}
+    else if (total_per_raw>=15 & total_per_raw<=17){score <-17}
+    else if (total_per_raw>=18 & total_per_raw<=21){score <-18}
+    else if (total_per_raw>=22 & total_per_raw<=27){score <-19}
+    else if (total_per_raw>=28 & total_per_raw<=33){score <-20}
+    else if (total_per_raw>=34 & total_per_raw<=39){score <-21}
+    else if (total_per_raw>=40 & total_per_raw<=45){score <-22}
+    else if (total_per_raw>=46 & total_per_raw<=53){score <-23}
+    else if (total_per_raw>=54 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.833_0.916 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.833 & vabs_total_age <= 0.916) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-8}
+    else if (total_per_raw==2){score <-9}
+    else if (total_per_raw==3){score <-10}
+    else if (total_per_raw==4){score <-11}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-12}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-13}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-14}
+    else if (total_per_raw>=11 & total_per_raw<=12){score <-15}
+    else if (total_per_raw>=13 & total_per_raw<=15){score <-16}
+    else if (total_per_raw>=16 & total_per_raw<=19){score <-17}
+    else if (total_per_raw>=20 & total_per_raw<=23){score <-18}
+    else if (total_per_raw>=24 & total_per_raw<=29){score <-19}
+    else if (total_per_raw>=30 & total_per_raw<=35){score <-20}
+    else if (total_per_raw>=36 & total_per_raw<=41){score <-21}
+    else if (total_per_raw>=42 & total_per_raw<=48){score <-22}
+    else if (total_per_raw>=49 & total_per_raw<=55){score <-23}
+    else if (total_per_raw>=56 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc0.916_1 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 0.916 & vabs_total_age <= 1) { 
+    if (total_per_raw==0){score <-7}
+    else if (total_per_raw==1){score <-8}
+    else if (total_per_raw>=2 & total_per_raw<=3){score <-9}
+    else if (total_per_raw==4){score <-10}
+    else if (total_per_raw==5){score <-11}
+    else if (total_per_raw>=6 & total_per_raw<=7){score <-12}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-13}
+    else if (total_per_raw>=10 & total_per_raw<=11){score <-14}
+    else if (total_per_raw>=12 & total_per_raw<=13){score <-15}
+    else if (total_per_raw>=14 & total_per_raw<=17){score <-16}
+    else if (total_per_raw>=18 & total_per_raw<=21){score <-17}
+    else if (total_per_raw>=22 & total_per_raw<=25){score <-18}
+    else if (total_per_raw>=26 & total_per_raw<=31){score <-19}
+    else if (total_per_raw>=32 & total_per_raw<=37){score <-20}
+    else if (total_per_raw>=38 & total_per_raw<=43){score <-21}
+    else if (total_per_raw>=44 & total_per_raw<=50){score <-22}
+    else if (total_per_raw>=51 & total_per_raw<=57){score <-23}
+    else if (total_per_raw>=58 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1_1.083 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1 & vabs_total_age <= 1.083) { 
+    if (total_per_raw==0){score <-7}
+    else if (total_per_raw>=1 & total_per_raw<=2){score <-8}
+    else if (total_per_raw==3){score <-9}
+    else if (total_per_raw==4){score <-10}
+    else if (total_per_raw==5){score <-11}
+    else if (total_per_raw>=6 & total_per_raw<=7){score <-12}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-13}
+    else if (total_per_raw>=10 & total_per_raw<=11){score <-14}
+    else if (total_per_raw>=12 & total_per_raw<=14){score <-15}
+    else if (total_per_raw>=15 & total_per_raw<=17){score <-16}
+    else if (total_per_raw>=18 & total_per_raw<=22){score <-17}
+    else if (total_per_raw>=23 & total_per_raw<=26){score <-18}
+    else if (total_per_raw>=27 & total_per_raw<=32){score <-19}
+    else if (total_per_raw>=33 & total_per_raw<=38){score <-20}
+    else if (total_per_raw>=39 & total_per_raw<=45){score <-21}
+    else if (total_per_raw>=46 & total_per_raw<=52){score <-22}
+    else if (total_per_raw>=53 & total_per_raw<=60){score <-23}
+    else if (total_per_raw>=61 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.083_1.166 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.083 & vabs_total_age <= 1.166) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-7}
+    else if (total_per_raw>=2 & total_per_raw<=3){score <-8}
+    else if (total_per_raw==4){score <-9}
+    else if (total_per_raw==5){score <-10}
+    else if (total_per_raw==6){score <-11}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-12}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-13}
+    else if (total_per_raw>=11 & total_per_raw<=12){score <-14}
+    else if (total_per_raw>=13 & total_per_raw<=15){score <-15}
+    else if (total_per_raw>=16 & total_per_raw<=19){score <-16}
+    else if (total_per_raw>=20 & total_per_raw<=24){score <-17}
+    else if (total_per_raw>=25 & total_per_raw<=28){score <-18}
+    else if (total_per_raw>=29 & total_per_raw<=33){score <-19}
+    else if (total_per_raw>=34 & total_per_raw<=40){score <-20}
+    else if (total_per_raw>=41 & total_per_raw<=46){score <-21}
+    else if (total_per_raw>=47 & total_per_raw<=54){score <-22}
+    else if (total_per_raw>=55 & total_per_raw<=63){score <-23}
+    else if (total_per_raw>=64 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.166_1.25 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.166 & vabs_total_age <= 1.25) { 
+    if (total_per_raw==0){score <-6}
+    else if (total_per_raw>=1 & total_per_raw<=2){score <-7}
+    else if (total_per_raw==3){score <-8}
+    else if (total_per_raw==4){score <-9}
+    else if (total_per_raw==5){score <-10}
+    else if (total_per_raw>=6 & total_per_raw<=7){score <-11}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-12}
+    else if (total_per_raw>=10 & total_per_raw<=11){score <-13}
+    else if (total_per_raw>=12 & total_per_raw<=13){score <-14}
+    else if (total_per_raw>=14 & total_per_raw<=17){score <-15}
+    else if (total_per_raw>=18 & total_per_raw<=21){score <-16}
+    else if (total_per_raw>=22 & total_per_raw<=26){score <-17}
+    else if (total_per_raw>=27 & total_per_raw<=30){score <-18}
+    else if (total_per_raw>=31 & total_per_raw<=35){score <-19}
+    else if (total_per_raw>=36 & total_per_raw<=42){score <-20}
+    else if (total_per_raw>=43 & total_per_raw<=49){score <-21}
+    else if (total_per_raw>=50 & total_per_raw<=57){score <-22}
+    else if (total_per_raw>=58 & total_per_raw<=67){score <-23}
+    else if (total_per_raw>=68 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.25_1.333 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.25 & vabs_total_age <= 1.333) { 
+    if (total_per_raw==0){score <-6}
+    else if (total_per_raw>=1 & total_per_raw<=2){score <-7}
+    else if (total_per_raw>=3 & total_per_raw<=4){score <-8}
+    else if (total_per_raw==5){score <-9}
+    else if (total_per_raw==6){score <-10}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-11}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-12}
+    else if (total_per_raw>=11 & total_per_raw<=13){score <-13}
+    else if (total_per_raw>=14 & total_per_raw<=16){score <-14}
+    else if (total_per_raw>=17 & total_per_raw<=19){score <-15}
+    else if (total_per_raw>=20 & total_per_raw<=23){score <-16}
+    else if (total_per_raw>=24 & total_per_raw<=28){score <-17}
+    else if (total_per_raw>=29 & total_per_raw<=33){score <-18}
+    else if (total_per_raw>=34 & total_per_raw<=39){score <-19}
+    else if (total_per_raw>=40 & total_per_raw<=45){score <-20}
+    else if (total_per_raw>=46 & total_per_raw<=51){score <-21}
+    else if (total_per_raw>=52 & total_per_raw<=60){score <-22}
+    else if (total_per_raw>=61 & total_per_raw<=70){score <-23}
+    else if (total_per_raw>=71 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.333_1.416 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.333 & vabs_total_age <= 1.416) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-6}
+    else if (total_per_raw>=2 & total_per_raw<=3){score <-7}
+    else if (total_per_raw==4){score <-8}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-9}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-10}
+    else if (total_per_raw==9){score <-11}
+    else if (total_per_raw>=10 & total_per_raw<=12){score <-12}
+    else if (total_per_raw>=13 & total_per_raw<=15){score <-13}
+    else if (total_per_raw>=16 & total_per_raw<=18){score <-14}
+    else if (total_per_raw>=19 & total_per_raw<=21){score <-15}
+    else if (total_per_raw>=22 & total_per_raw<=26){score <-16}
+    else if (total_per_raw>=27 & total_per_raw<=31){score <-17}
+    else if (total_per_raw>=32 & total_per_raw<=37){score <-18}
+    else if (total_per_raw>=38 & total_per_raw<=43){score <-19}
+    else if (total_per_raw>=44 & total_per_raw<=50){score <-20}
+    else if (total_per_raw>=51 & total_per_raw<=57){score <-21}
+    else if (total_per_raw>=58 & total_per_raw<=64){score <-22}
+    else if (total_per_raw>=65 & total_per_raw<=74){score <-23}
+    else if (total_per_raw>=75 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.416_1.5 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.416 & vabs_total_age <= 1.5) { 
+    if (total_per_raw==0){score <-5}
+    else if (total_per_raw>=1 & total_per_raw<=2){score <-6}
+    else if (total_per_raw>=3 & total_per_raw<=4){score <-7}
+    else if (total_per_raw==5){score <-8}
+    else if (total_per_raw>=6 & total_per_raw<=7){score <-9}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-10}
+    else if (total_per_raw>=10 & total_per_raw<=11){score <-11}
+    else if (total_per_raw>=12 & total_per_raw<=14){score <-12}
+    else if (total_per_raw>=15 & total_per_raw<=16){score <-13}
+    else if (total_per_raw>=17 & total_per_raw<=19){score <-14}
+    else if (total_per_raw>=20 & total_per_raw<=23){score <-15}
+    else if (total_per_raw>=24 & total_per_raw<=28){score <-16}
+    else if (total_per_raw>=29 & total_per_raw<=34){score <-17}
+    else if (total_per_raw>=35 & total_per_raw<=40){score <-18}
+    else if (total_per_raw>=41 & total_per_raw<=47){score <-19}
+    else if (total_per_raw>=48 & total_per_raw<=54){score <-20}
+    else if (total_per_raw>=55 & total_per_raw<=61){score <-21}
+    else if (total_per_raw>=62 & total_per_raw<=68){score <-22}
+    else if (total_per_raw>=69 & total_per_raw<=77){score <-23}
+    else if (total_per_raw>=78 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.5_1.583 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.5 & vabs_total_age <= 1.583) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-5}
+    else if (total_per_raw>=2 & total_per_raw<=3){score <-6}
+    else if (total_per_raw>=4 & total_per_raw<=5){score <-7}
+    else if (total_per_raw==6){score <-8}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-9}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-10}
+    else if (total_per_raw>=11 & total_per_raw<=12){score <-11}
+    else if (total_per_raw>=13 & total_per_raw<=15){score <-12}
+    else if (total_per_raw>=16 & total_per_raw<=18){score <-13}
+    else if (total_per_raw>=19 & total_per_raw<=22){score <-14}
+    else if (total_per_raw>=23 & total_per_raw<=26){score <-15}
+    else if (total_per_raw>=27 & total_per_raw<=30){score <-16}
+    else if (total_per_raw>=31 & total_per_raw<=36){score <-17}
+    else if (total_per_raw>=37 & total_per_raw<=43){score <-18}
+    else if (total_per_raw>=44 & total_per_raw<=49){score <-19}
+    else if (total_per_raw>=50 & total_per_raw<=57){score <-20}
+    else if (total_per_raw>=58 & total_per_raw<=63){score <-21}
+    else if (total_per_raw>=64 & total_per_raw<=71){score <-22}
+    else if (total_per_raw>=72 & total_per_raw<=80){score <-23}
+    else if (total_per_raw>=81 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.583_1.666 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.583 & vabs_total_age <= 1.666) { 
+    if (total_per_raw>=0 & total_per_raw<=2){score <-5}
+    else if (total_per_raw>=3 & total_per_raw<=4){score <-6}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-7}
+    else if (total_per_raw==7){score <-8}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-9}
+    else if (total_per_raw>=10 & total_per_raw<=12){score <-10}
+    else if (total_per_raw>=13 & total_per_raw<=14){score <-11}
+    else if (total_per_raw>=15 & total_per_raw<=17){score <-12}
+    else if (total_per_raw>=18 & total_per_raw<=20){score <-13}
+    else if (total_per_raw>=21 & total_per_raw<=24){score <-14}
+    else if (total_per_raw>=25 & total_per_raw<=28){score <-15}
+    else if (total_per_raw>=29 & total_per_raw<=34){score <-16}
+    else if (total_per_raw>=35 & total_per_raw<=40){score <-17}
+    else if (total_per_raw>=41 & total_per_raw<=46){score <-18}
+    else if (total_per_raw>=47 & total_per_raw<=54){score <-19}
+    else if (total_per_raw>=55 & total_per_raw<=61){score <-20}
+    else if (total_per_raw>=62 & total_per_raw<=67){score <-21}
+    else if (total_per_raw>=68 & total_per_raw<=75){score <-22}
+    else if (total_per_raw>=76 & total_per_raw<=83){score <-23}
+    else if (total_per_raw>=84 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.666_1.75 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.666 & vabs_total_age <= 1.75) { 
+    if (total_per_raw>=0 & total_per_raw<=3){score <-5}
+    else if (total_per_raw>=4 & total_per_raw<=5){score <-6}
+    else if (total_per_raw>=6 & total_per_raw<=7){score <-7}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-8}
+    else if (total_per_raw>=10 & total_per_raw<=11){score <-9}
+    else if (total_per_raw>=12 & total_per_raw<=13){score <-10}
+    else if (total_per_raw>=14 & total_per_raw<=15){score <-11}
+    else if (total_per_raw>=16 & total_per_raw<=19){score <-12}
+    else if (total_per_raw>=20 & total_per_raw<=22){score <-13}
+    else if (total_per_raw>=23 & total_per_raw<=26){score <-14}
+    else if (total_per_raw>=27 & total_per_raw<=30){score <-15}
+    else if (total_per_raw>=31 & total_per_raw<=36){score <-16}
+    else if (total_per_raw>=37 & total_per_raw<=43){score <-17}
+    else if (total_per_raw>=44 & total_per_raw<=49){score <-18}
+    else if (total_per_raw>=50 & total_per_raw<=57){score <-19}
+    else if (total_per_raw>=58 & total_per_raw<=65){score <-20}
+    else if (total_per_raw>=66 & total_per_raw<=71){score <-21}
+    else if (total_per_raw>=72 & total_per_raw<=77){score <-22}
+    else if (total_per_raw>=78 & total_per_raw<=86){score <-23}
+    else if (total_per_raw>=87 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.75_1.833 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.75 & vabs_total_age <= 1.833) {
+    if (total_per_raw==0){score <-4}
+    else if (total_per_raw>=1 & total_per_raw<=4){score <-5}
+    else if (total_per_raw>=5 & total_per_raw<=6){score <-6}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-7}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-8}
+    else if (total_per_raw>=11 & total_per_raw<=12){score <-9}
+    else if (total_per_raw>=13 & total_per_raw<=15){score <-10}
+    else if (total_per_raw>=16 & total_per_raw<=17){score <-11}
+    else if (total_per_raw>=18 & total_per_raw<=22){score <-12}
+    else if (total_per_raw>=23 & total_per_raw<=25){score <-13}
+    else if (total_per_raw>=26 & total_per_raw<=29){score <-14}
+    else if (total_per_raw>=30 & total_per_raw<=34){score <-15}
+    else if (total_per_raw>=35 & total_per_raw<=40){score <-16}
+    else if (total_per_raw>=41 & total_per_raw<=47){score <-17}
+    else if (total_per_raw>=48 & total_per_raw<=54){score <-18}
+    else if (total_per_raw>=55 & total_per_raw<=61){score <-19}
+    else if (total_per_raw>=62 & total_per_raw<=68){score <-20}
+    else if (total_per_raw>=69 & total_per_raw<=73){score <-21}
+    else if (total_per_raw>=74 & total_per_raw<=79){score <-22}
+    else if (total_per_raw>=80 & total_per_raw<=88){score <-23}
+    else if (total_per_raw>=89 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.833_1.916 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.833 & vabs_total_age <= 1.916) { 
+    if (total_per_raw>=0 & total_per_raw<=1){score <-4}
+    else if (total_per_raw>=2 & total_per_raw<=5){score <-5}
+    else if (total_per_raw>=6 & total_per_raw<=7){score <-6}
+    else if (total_per_raw>=8 & total_per_raw<=9){score <-7}
+    else if (total_per_raw>=10 & total_per_raw<=11){score <-8}
+    else if (total_per_raw>=12 & total_per_raw<=13){score <-9}
+    else if (total_per_raw>=14 & total_per_raw<=16){score <-10}
+    else if (total_per_raw>=17 & total_per_raw<=20){score <-11}
+    else if (total_per_raw>=21 & total_per_raw<=23){score <-12}
+    else if (total_per_raw>=24 & total_per_raw<=27){score <-13}
+    else if (total_per_raw>=28 & total_per_raw<=31){score <-14}
+    else if (total_per_raw>=32 & total_per_raw<=36){score <-15}
+    else if (total_per_raw>=37 & total_per_raw<=43){score <-16}
+    else if (total_per_raw>=44 & total_per_raw<=49){score <-17}
+    else if (total_per_raw>=50 & total_per_raw<=58){score <-18}
+    else if (total_per_raw>=59 & total_per_raw<=65){score <-19}
+    else if (total_per_raw>=66 & total_per_raw<=71){score <-20}
+    else if (total_per_raw>=72 & total_per_raw<=76){score <-21}
+    else if (total_per_raw>=77 & total_per_raw<=82){score <-22}
+    else if (total_per_raw>=83 & total_per_raw<=91){score <-23}
+    else if (total_per_raw>=92 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
+VPC_PerFunc1.916_2 <- function(vabs_total_age, total_per_raw){
+  score <- c()
+  if (vabs_total_age > 1.916 & vabs_total_age <= 2) { 
+    if (total_per_raw>=0 & total_per_raw<=3){score <-4}
+    else if (total_per_raw>=4 & total_per_raw<=6){score <-5}
+    else if (total_per_raw>=7 & total_per_raw<=8){score <-6}
+    else if (total_per_raw>=9 & total_per_raw<=10){score <-7}
+    else if (total_per_raw>=11 & total_per_raw<=12){score <-8}
+    else if (total_per_raw>=13 & total_per_raw<=15){score <-9}
+    else if (total_per_raw>=16 & total_per_raw<=18){score <-10}
+    else if (total_per_raw>=19 & total_per_raw<=22){score <-11}
+    else if (total_per_raw>=23 & total_per_raw<=25){score <-12}
+    else if (total_per_raw>=26 & total_per_raw<=30){score <-13}
+    else if (total_per_raw>=31 & total_per_raw<=34){score <-14}
+    else if (total_per_raw>=35 & total_per_raw<=40){score <-15}
+    else if (total_per_raw>=41 & total_per_raw<=47){score <-16}
+    else if (total_per_raw>=48 & total_per_raw<=54){score <-17}
+    else if (total_per_raw>=55 & total_per_raw<=61){score <-18}
+    else if (total_per_raw>=62 & total_per_raw<=67){score <-19}
+    else if (total_per_raw>=68 & total_per_raw<=73){score <-20}
+    else if (total_per_raw>=74 & total_per_raw<=77){score <-21}
+    else if (total_per_raw>=78 & total_per_raw<=85){score <-22}
+    else if (total_per_raw>=86 & total_per_raw<=93){score <-23}
+    else if (total_per_raw>=94 & total_per_raw<=110){score <-24}
+    else {score <- NA}
+  } else {score <- NA}
+  return(score)
+}
+
 #starting from age 2 up till 18
 VPC_PerFunc2_2.166 <- function(vabs_total_age, total_per_raw){
   score <- c()
@@ -1751,6 +2352,78 @@ VPC_PerFunc17.5_17.999 <- function(vabs_total_age, total_per_raw){
 VPC_PerFuncTotal <- function(vabs_total_age, total_per_raw){
   score <- c()
   if(is.na(vabs_total_age) | is.na(total_per_raw)) {score <- NA}
+  else if (vabs_total_age >= 0 & vabs_total_age <= 0.083) {
+    score <- VPC_PerFunc0_0.083(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.083 & vabs_total_age <= 0.166) {
+    score <- VPC_PerFunc0.083_0.166(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.166 & vabs_total_age <= 0.25) {
+    score <- VPC_PerFunc0.166_0.25(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.25 & vabs_total_age <= 0.333) {
+    score <- VPC_PerFunc0.25_0.333(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.333 & vabs_total_age <= 0.416) {
+    score <- VPC_PerFunc0.333_0.416(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.416 & vabs_total_age <= 0.5) {
+    score <- VPC_PerFunc0.416_0.5(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.5 & vabs_total_age <= 0.583) {
+    score <- VPC_PerFunc0.5_0.583(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.583 & vabs_total_age <= 0.666) {
+    score <- VPC_PerFunc0.583_0.666(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.666 & vabs_total_age <= 0.75) {
+    score <- VPC_PerFunc0.666_0.75(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.75 & vabs_total_age <= 0.833) {
+    score <- VPC_PerFunc0.75_0.833(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.833 & vabs_total_age <= 0.916) {
+    score <- VPC_PerFunc0.833_0.916(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 0.916 & vabs_total_age <= 1) {
+    score <- VPC_PerFunc0.916_1(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1 & vabs_total_age <= 1.083) {
+    score <- VPC_PerFunc1_1.083(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.083 & vabs_total_age <= 1.166) {
+    score <- VPC_PerFunc1.083_1.166(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.166 & vabs_total_age <= 1.125) {
+    score <- VPC_PerFunc1.166_1.25(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.25 & vabs_total_age <= 1.333) {
+    score <- VPC_PerFunc1.25_1.333(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.333 & vabs_total_age <= 1.416) {
+    score <- VPC_PerFunc1.333_1.416(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.416 & vabs_total_age <= 1.5) {
+    score <- VPC_PerFunc1.416_1.5(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.5 & vabs_total_age <= 1.583) {
+    score <- VPC_PerFunc1.5_1.583(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.583 & vabs_total_age <= 1.666) {
+    score <- VPC_PerFunc1.583_1.666(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.666 & vabs_total_age <= 1.75) {
+    score <- VPC_PerFunc1.666_1.75(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.75 & vabs_total_age <= 1.833) {
+    score <- VPC_PerFunc1.75_1.833(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.833 & vabs_total_age <= 1.916) {
+    score <- VPC_PerFunc1.833_1.916(vabs_total_age, total_per_raw)
+  }
+  else if (vabs_total_age > 1.916 & vabs_total_age <= 2) {
+    score <- VPC_PerFunc1.916_2(vabs_total_age, total_per_raw)
+  }
   else if (vabs_total_age >= 2 & vabs_total_age <= 2.166) {
     score <- VPC_PerFunc2_2.166(vabs_total_age, total_per_raw)
   }
