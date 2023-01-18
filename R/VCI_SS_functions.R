@@ -320,7 +320,7 @@ ComSSFuncTotal <- function(vabs_total_age, vci_com_total_vscale_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- ComSSFunc14_17.999(vabs_total_age, vci_com_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
@@ -580,7 +580,7 @@ DlsSSFuncTotal <- function(vabs_total_age, vci_dls_total_vscale_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- DlsSSFunc14_17.999(vabs_total_age, vci_dls_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
@@ -932,7 +932,7 @@ SocSSFuncTotal <- function(vabs_total_age, vci_soc_total_vscale_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- SocSSFunc14_17.999(vabs_total_age, vci_soc_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
@@ -941,7 +941,7 @@ SocSSFuncTotal <- function(vabs_total_age, vci_soc_total_vscale_r){
 #VCI ABC standard score functions 
 ABCSSFunc0_1 <- function(vabs_total_age, vci_abc_sum_domain_ss_r){
   score <- c()
-  if (vabs_total_age >= 0 & vabs_total_age <1) { 
+  if (vabs_total_age >= 0 & vabs_total_age < 1) { 
     if(vci_abc_sum_domain_ss_r>=60 & vci_abc_sum_domain_ss_r<=61){score <-20}
     else if(vci_abc_sum_domain_ss_r>=62 & vci_abc_sum_domain_ss_r<=63){score <-21}
     else if(vci_abc_sum_domain_ss_r>=64 & vci_abc_sum_domain_ss_r<=66){score <-22}
@@ -1193,7 +1193,6 @@ ABCSSFunc1_2 <- function(vabs_total_age, vci_abc_sum_domain_ss_r){
     else if(vci_abc_sum_domain_ss_r>=399 & vci_abc_sum_domain_ss_r<=402){score <-138}
     else if(vci_abc_sum_domain_ss_r>=403 & vci_abc_sum_domain_ss_r<=412){score <-139}
     else if(vci_abc_sum_domain_ss_r>=413 & vci_abc_sum_domain_ss_r<=420){score <-140}
-    
     else {score <- NA}
   }
   else {score <- NA}
@@ -1608,7 +1607,7 @@ ABCSSFuncTotal <- function(vabs_total_age, vci_abc_sum_domain_ss_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- ABCSSFunc14_17.999(vabs_total_age, vci_abc_sum_domain_ss_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
@@ -1618,15 +1617,15 @@ ABCSSFuncTotal <- function(vabs_total_age, vci_abc_sum_domain_ss_r){
 #VCI MOT standard score functions 
 MotSSFunc0_1 <- function(vabs_total_age, vci_motor_total_vscale_r){
   score <- c()
-  if (vabs_total_age >= 0 & vabs_total_age <1) { 
-    if(vci_motor_total_vscale_r==2){score <-20}
-    else if(vci_motor_total_vscale_r==3){score <-22}
-    else if(vci_motor_total_vscale_r==4){score <-24}
-    else if(vci_motor_total_vscale_r==5){score <-26}
-    else if(vci_motor_total_vscale_r==6){score <-29}
-    else if(vci_motor_total_vscale_r==7){score <-31}
-    else if(vci_motor_total_vscale_r==8){score <-34}
-    else if(vci_motor_total_vscale_r==9){score <-37}
+  if (vabs_total_age >= 0 & vabs_total_age < 1) { 
+          if(vci_motor_total_vscale_r==2){score <-20}
+     else if(vci_motor_total_vscale_r==3){score <-22}
+     else if(vci_motor_total_vscale_r==4){score <-24}
+     else if(vci_motor_total_vscale_r==5){score <-26}
+     else if(vci_motor_total_vscale_r==6){score <-29}
+     else if(vci_motor_total_vscale_r==7){score <-31}
+     else if(vci_motor_total_vscale_r==8){score <-34}
+     else if(vci_motor_total_vscale_r==9){score <-37}
     else if(vci_motor_total_vscale_r==10){score <-40}
     else if(vci_motor_total_vscale_r==11){score <-43}
     else if(vci_motor_total_vscale_r==12){score <-46}
@@ -1839,10 +1838,9 @@ MotSSFuncTotal <- function(vabs_total_age, vci_motor_total_vscale_r){
   else if (vabs_total_age >= 3 & vabs_total_age <= 9.999) {
     score <- MotSSFunc3_9.999(vabs_total_age, vci_motor_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 10) {score <- NA}
+  else if (vabs_total_age > 10) {score <- NA}
   else {score <- NA} 
   return(score)
 }
 
-# MotSSFuncTotal(1,2000)
 
