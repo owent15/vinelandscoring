@@ -1,4 +1,111 @@
 #vpc communication percentile functions 
+VPC_ComPercFunc0_1 <- function(vabs_total_age, vpc_com_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 0 & vabs_total_age < 1) { 
+    if(vpc_com_total_vscale_r>=2 & vpc_com_total_vscale_r<=3){score<- "<1"}
+    else if(vpc_com_total_vscale_r==4){score<- "<1"}
+    else if(vpc_com_total_vscale_r==5){score<- "<1"}
+    else if(vpc_com_total_vscale_r==6){score<- "<1"}
+    else if(vpc_com_total_vscale_r==7){score<- "<1"}
+    else if(vpc_com_total_vscale_r==8){score<- "<1"}
+    else if(vpc_com_total_vscale_r==9){score<- "<1"}
+    else if(vpc_com_total_vscale_r==10){score<- "<1"}
+    else if(vpc_com_total_vscale_r==11){score<- "<1"}
+    else if(vpc_com_total_vscale_r==12){score<- "<1"}
+    else if(vpc_com_total_vscale_r==13){score<- "<1"}
+    else if(vpc_com_total_vscale_r==14){score<- "<1"}
+    else if(vpc_com_total_vscale_r==15){score<- "<1"}
+    else if(vpc_com_total_vscale_r==16){score<- "<1"}
+    else if(vpc_com_total_vscale_r==17){score<- "1"}
+    else if(vpc_com_total_vscale_r==18){score<- "1"}
+    else if(vpc_com_total_vscale_r==19){score<- "2"}
+    else if(vpc_com_total_vscale_r==20){score<- "3"}
+    else if(vpc_com_total_vscale_r==21){score<- "4"}
+    else if(vpc_com_total_vscale_r==22){score<- "5"}
+    else if(vpc_com_total_vscale_r==23){score<- "8"}
+    else if(vpc_com_total_vscale_r==24){score<- "12"}
+    else if(vpc_com_total_vscale_r==25){score<- "16"}
+    else if(vpc_com_total_vscale_r==26){score<- "23"}
+    else if(vpc_com_total_vscale_r==27){score<- "30"}
+    else if(vpc_com_total_vscale_r==28){score<- "37"}
+    else if(vpc_com_total_vscale_r==29){score<- "42"}
+    else if(vpc_com_total_vscale_r==30){score<- "50"}
+    else if(vpc_com_total_vscale_r==31){score<- "58"}
+    else if(vpc_com_total_vscale_r==32){score<- "68"}
+    else if(vpc_com_total_vscale_r==33){score<- "77"}
+    else if(vpc_com_total_vscale_r==34){score<- "82"}
+    else if(vpc_com_total_vscale_r==35){score<- "87"}
+    else if(vpc_com_total_vscale_r==36){score<- "91"}
+    else if(vpc_com_total_vscale_r==37){score<- "94"}
+    else if(vpc_com_total_vscale_r==38){score<- "96"}
+    else if(vpc_com_total_vscale_r==39){score<- "97"}
+    else if(vpc_com_total_vscale_r==40){score<- "98"}
+    else if(vpc_com_total_vscale_r==41){score<- "99"}
+    else if(vpc_com_total_vscale_r==42){score<- "99"}
+    else if(vpc_com_total_vscale_r==43){score<- "99"}
+    else if(vpc_com_total_vscale_r==44){score<- ">99"}
+    else if(vpc_com_total_vscale_r>=45 & vpc_com_total_vscale_r<=48){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+VPC_ComPercFunc1_2 <- function(vabs_total_age, vpc_com_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 1 & vabs_total_age < 2) { 
+    if(vpc_com_total_vscale_r==2){score<- "<1"}
+    else if(vpc_com_total_vscale_r==3){score<- "<1"}
+    else if(vpc_com_total_vscale_r==4){score<- "<1"}
+    else if(vpc_com_total_vscale_r==5){score<- "<1"}
+    else if(vpc_com_total_vscale_r==6){score<- "<1"}
+    else if(vpc_com_total_vscale_r==7){score<- "<1"}
+    else if(vpc_com_total_vscale_r==8){score<- "<1"}
+    else if(vpc_com_total_vscale_r==9){score<- "<1"}
+    else if(vpc_com_total_vscale_r==10){score<- "<1"}
+    else if(vpc_com_total_vscale_r==11){score<- "<1"}
+    else if(vpc_com_total_vscale_r==12){score<- "<1"}
+    else if(vpc_com_total_vscale_r==13){score<- "<1"}
+    else if(vpc_com_total_vscale_r==14){score<- "1"}
+    else if(vpc_com_total_vscale_r==15){score<- "1"}
+    else if(vpc_com_total_vscale_r==16){score<- "2"}
+    else if(vpc_com_total_vscale_r==17){score<- "3"}
+    else if(vpc_com_total_vscale_r==18){score<- "5"}
+    else if(vpc_com_total_vscale_r==19){score<- "7"}
+    else if(vpc_com_total_vscale_r==20){score<- "9"}
+    else if(vpc_com_total_vscale_r==21){score<- "13"}
+    else if(vpc_com_total_vscale_r==22){score<- "16"}
+    else if(vpc_com_total_vscale_r==23){score<- "19"}
+    else if(vpc_com_total_vscale_r==24){score<- "25"}
+    else if(vpc_com_total_vscale_r==25){score<- "30"}
+    else if(vpc_com_total_vscale_r==26){score<- "34"}
+    else if(vpc_com_total_vscale_r==27){score<- "39"}
+    else if(vpc_com_total_vscale_r==28){score<- "45"}
+    else if(vpc_com_total_vscale_r==29){score<- "47"}
+    else if(vpc_com_total_vscale_r==30){score<- "53"}
+    else if(vpc_com_total_vscale_r==31){score<- "58"}
+    else if(vpc_com_total_vscale_r==32){score<- "63"}
+    else if(vpc_com_total_vscale_r==33){score<- "70"}
+    else if(vpc_com_total_vscale_r==34){score<- "75"}
+    else if(vpc_com_total_vscale_r==35){score<- "81"}
+    else if(vpc_com_total_vscale_r==36){score<- "84"}
+    else if(vpc_com_total_vscale_r==37){score<- "88"}
+    else if(vpc_com_total_vscale_r==38){score<- "91"}
+    else if(vpc_com_total_vscale_r==39){score<- "93"}
+    else if(vpc_com_total_vscale_r==40){score<- "95"}
+    else if(vpc_com_total_vscale_r==41){score<- "96"}
+    else if(vpc_com_total_vscale_r==42){score<- "98"}
+    else if(vpc_com_total_vscale_r==43){score<- "98"}
+    else if(vpc_com_total_vscale_r==44){score<- "99"}
+    else if(vpc_com_total_vscale_r==45){score<- "99"}
+    else if(vpc_com_total_vscale_r==46){score<- "99"}
+    else if(vpc_com_total_vscale_r>=47 & vpc_com_total_vscale_r<=48){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
 VPC_ComPercFunc2_2.999 <- function(vabs_total_age, vpc_com_total_vscale_r){
   score <- c()
   if (vabs_total_age >= 2 & vabs_total_age <= 2.999) { 
@@ -190,6 +297,12 @@ VPC_ComPercFunc14_17.999 <- function(vabs_total_age, vpc_com_total_vscale_r){
 VPC_ComPercFuncTotal <- function(vabs_total_age, vpc_com_total_vscale_r){
   score <- c()
   if(is.na(vabs_total_age) | vpc_com_total_vscale_r==0) {score <- NA}
+  else if (vabs_total_age >= 0 & vabs_total_age < 1) {
+    score <- VPC_ComPercFunc0_1(vabs_total_age, vpc_com_total_vscale_r)
+  }
+  else if (vabs_total_age >= 1 & vabs_total_age < 2) {
+    score <- VPC_ComPercFunc1_2(vabs_total_age, vpc_com_total_vscale_r)
+  }
   else if (vabs_total_age >= 2 & vabs_total_age <= 2.999) {
     score <- VPC_ComPercFunc2_2.999(vabs_total_age, vpc_com_total_vscale_r)
   }
@@ -199,12 +312,77 @@ VPC_ComPercFuncTotal <- function(vabs_total_age, vpc_com_total_vscale_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- VPC_ComPercFunc14_17.999(vabs_total_age, vpc_com_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
 
 #vpc DLS percentile functions 
+VPC_DlsPercFunc0_1 <- function(vabs_total_age, vpc_dls_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 0 & vabs_total_age < 1) { 
+    if(vpc_dls_total_vscale_r>=1 & vpc_dls_total_vscale_r<=2){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==3){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==4){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==5){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==6){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==7){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==8){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==9){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==10){score<- "2"}
+    else if(vpc_dls_total_vscale_r==11){score<- "5"}
+    else if(vpc_dls_total_vscale_r==12){score<- "13"}
+    else if(vpc_dls_total_vscale_r==13){score<- "23"}
+    else if(vpc_dls_total_vscale_r==14){score<- "37"}
+    else if(vpc_dls_total_vscale_r==15){score<- "50"}
+    else if(vpc_dls_total_vscale_r==16){score<- "66"}
+    else if(vpc_dls_total_vscale_r==17){score<- "79"}
+    else if(vpc_dls_total_vscale_r==18){score<- "87"}
+    else if(vpc_dls_total_vscale_r==19){score<- "94"}
+    else if(vpc_dls_total_vscale_r==20){score<- "97"}
+    else if(vpc_dls_total_vscale_r==21){score<- "99"}
+    else if(vpc_dls_total_vscale_r==22){score<- "99"}
+    else if(vpc_dls_total_vscale_r>=23 & vpc_dls_total_vscale_r<=24){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+VPC_DlsPercFunc1_2 <- function(vabs_total_age, vpc_dls_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 1 & vabs_total_age < 2) { 
+    if(vpc_dls_total_vscale_r==1){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==2){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==3){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==4){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==5){score<- "<1"}
+    else if(vpc_dls_total_vscale_r==6){score<- "1"}
+    else if(vpc_dls_total_vscale_r==7){score<- "2"}
+    else if(vpc_dls_total_vscale_r==8){score<- "4"}
+    else if(vpc_dls_total_vscale_r==9){score<- "6"}
+    else if(vpc_dls_total_vscale_r==10){score<- "9"}
+    else if(vpc_dls_total_vscale_r==11){score<- "13"}
+    else if(vpc_dls_total_vscale_r==12){score<- "16"}
+    else if(vpc_dls_total_vscale_r==13){score<- "25"}
+    else if(vpc_dls_total_vscale_r==14){score<- "37"}
+    else if(vpc_dls_total_vscale_r==15){score<- "50"}
+    else if(vpc_dls_total_vscale_r==16){score<- "63"}
+    else if(vpc_dls_total_vscale_r==17){score<- "75"}
+    else if(vpc_dls_total_vscale_r==18){score<- "86"}
+    else if(vpc_dls_total_vscale_r==19){score<- "92"}
+    else if(vpc_dls_total_vscale_r==20){score<- "96"}
+    else if(vpc_dls_total_vscale_r==21){score<- "98"}
+    else if(vpc_dls_total_vscale_r==22){score<- "99"}
+    else if(vpc_dls_total_vscale_r==23){score<- "99"}
+    else if(vpc_dls_total_vscale_r==24){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+
 VPC_DlsPercFunc2_2.999 <- function(vabs_total_age, vpc_dls_total_vscale_r){
   score <- c()
   if (vabs_total_age >= 2 & vabs_total_age <= 2.999) { 
@@ -378,6 +556,12 @@ VPC_DlsPercFunc14_17.999 <- function(vabs_total_age, vpc_dls_total_vscale_r){
 VPC_DlsPercFuncTotal <- function(vabs_total_age, vpc_dls_total_vscale_r){
   score <- c()
   if(is.na(vabs_total_age) | vpc_dls_total_vscale_r==0) {score <- NA}
+  else if (vabs_total_age >= 0 & vabs_total_age < 1) {
+    score <- VPC_DlsPercFunc0_1(vabs_total_age, vpc_dls_total_vscale_r)
+  }
+  else if (vabs_total_age >= 1 & vabs_total_age < 2) {
+    score <- VPC_DlsPercFunc1_2(vabs_total_age, vpc_dls_total_vscale_r)
+  }
   else if (vabs_total_age >= 2 & vabs_total_age <= 2.999) {
     score <- VPC_DlsPercFunc2_2.999(vabs_total_age, vpc_dls_total_vscale_r)
   }
@@ -387,7 +571,7 @@ VPC_DlsPercFuncTotal <- function(vabs_total_age, vpc_dls_total_vscale_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- VPC_DlsPercFunc14_17.999(vabs_total_age, vpc_dls_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
@@ -395,6 +579,111 @@ VPC_DlsPercFuncTotal <- function(vabs_total_age, vpc_dls_total_vscale_r){
 
 
 #vpc socialisation percentile functions 
+VPC_SocPercFunc0_1 <- function(vabs_total_age, vpc_soc_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 0 & vabs_total_age < 1) { 
+    if(vpc_soc_total_vscale_r==2){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==3){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==4){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==5){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==6){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==7){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==8){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==9){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==10){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==11){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==12){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==13){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==14){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==15){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==16){score<- "1"}
+    else if(vpc_soc_total_vscale_r==17){score<- "1"}
+    else if(vpc_soc_total_vscale_r==18){score<- "1"}
+    else if(vpc_soc_total_vscale_r==19){score<- "2"}
+    else if(vpc_soc_total_vscale_r==20){score<- "3"}
+    else if(vpc_soc_total_vscale_r==21){score<- "4"}
+    else if(vpc_soc_total_vscale_r==22){score<- "5"}
+    else if(vpc_soc_total_vscale_r==23){score<- "8"}
+    else if(vpc_soc_total_vscale_r==24){score<- "10"}
+    else if(vpc_soc_total_vscale_r==25){score<- "13"}
+    else if(vpc_soc_total_vscale_r==26){score<- "18"}
+    else if(vpc_soc_total_vscale_r==27){score<- "23"}
+    else if(vpc_soc_total_vscale_r==28){score<- "34"}
+    else if(vpc_soc_total_vscale_r==29){score<- "42"}
+    else if(vpc_soc_total_vscale_r==30){score<- "50"}
+    else if(vpc_soc_total_vscale_r==31){score<- "61"}
+    else if(vpc_soc_total_vscale_r==32){score<- "75"}
+    else if(vpc_soc_total_vscale_r==33){score<- "82"}
+    else if(vpc_soc_total_vscale_r==34){score<- "87"}
+    else if(vpc_soc_total_vscale_r==35){score<- "91"}
+    else if(vpc_soc_total_vscale_r==36){score<- "93"}
+    else if(vpc_soc_total_vscale_r==37){score<- "95"}
+    else if(vpc_soc_total_vscale_r==38){score<- "97"}
+    else if(vpc_soc_total_vscale_r==39){score<- "98"}
+    else if(vpc_soc_total_vscale_r==40){score<- "99"}
+    else if(vpc_soc_total_vscale_r==41){score<- "99"}
+    else if(vpc_soc_total_vscale_r>=42 & vpc_soc_total_vscale_r<= 48){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+VPC_SocPercFunc1_2 <- function(vabs_total_age, vpc_soc_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 1 & vabs_total_age < 2) { 
+    if(vpc_soc_total_vscale_r==2){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==3){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==4){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==5){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==6){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==7){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==8){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==9){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==10){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==11){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==12){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==13){score<- "<1"}
+    else if(vpc_soc_total_vscale_r==14){score<- "1"}
+    else if(vpc_soc_total_vscale_r==15){score<- "1"}
+    else if(vpc_soc_total_vscale_r==16){score<- "2"}
+    else if(vpc_soc_total_vscale_r==17){score<- "3"}
+    else if(vpc_soc_total_vscale_r==18){score<- "4"}
+    else if(vpc_soc_total_vscale_r==19){score<- "5"}
+    else if(vpc_soc_total_vscale_r==20){score<- "7"}
+    else if(vpc_soc_total_vscale_r==21){score<- "9"}
+    else if(vpc_soc_total_vscale_r==22){score<- "12"}
+    else if(vpc_soc_total_vscale_r==23){score<- "14"}
+    else if(vpc_soc_total_vscale_r==24){score<- "18"}
+    else if(vpc_soc_total_vscale_r==25){score<- "21"}
+    else if(vpc_soc_total_vscale_r==26){score<- "27"}
+    else if(vpc_soc_total_vscale_r==27){score<- "37"}
+    else if(vpc_soc_total_vscale_r==28){score<- "42"}
+    else if(vpc_soc_total_vscale_r==29){score<- "47"}
+    else if(vpc_soc_total_vscale_r==30){score<- "53"}
+    else if(vpc_soc_total_vscale_r==31){score<- "63"}
+    else if(vpc_soc_total_vscale_r==32){score<- "75"}
+    else if(vpc_soc_total_vscale_r==33){score<- "79"}
+    else if(vpc_soc_total_vscale_r==34){score<- "82"}
+    else if(vpc_soc_total_vscale_r==35){score<- "86"}
+    else if(vpc_soc_total_vscale_r==36){score<- "88"}
+    else if(vpc_soc_total_vscale_r==37){score<- "91"}
+    else if(vpc_soc_total_vscale_r==38){score<- "93"}
+    else if(vpc_soc_total_vscale_r==39){score<- "95"}
+    else if(vpc_soc_total_vscale_r==40){score<- "96"}
+    else if(vpc_soc_total_vscale_r==41){score<- "97"}
+    else if(vpc_soc_total_vscale_r==42){score<- "98"}
+    else if(vpc_soc_total_vscale_r==43){score<- "98"}
+    else if(vpc_soc_total_vscale_r==44){score<- "99"}
+    else if(vpc_soc_total_vscale_r==45){score<- "99"}
+    else if(vpc_soc_total_vscale_r==46){score<- "99"}
+    else if(vpc_soc_total_vscale_r>=47 & vpc_soc_total_vscale_r<= 48){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
 VPC_SocPercFunc2_2.999 <- function(vabs_total_age, vpc_soc_total_vscale_r){
   score <- c()
   if (vabs_total_age >= 2 & vabs_total_age <= 2.999) { 
@@ -623,6 +912,12 @@ VPC_SocPercFunc14_17.999 <- function(vabs_total_age, vpc_soc_total_vscale_r){
 VPC_SocPercFuncTotal <- function(vabs_total_age, vpc_soc_total_vscale_r){
   score <- c()
   if(is.na(vabs_total_age) | vpc_soc_total_vscale_r==0) {score <- NA}
+  else if (vabs_total_age >= 0 & vabs_total_age <1) {
+    score <- VPC_SocPercFunc0_1(vabs_total_age, vpc_soc_total_vscale_r)
+  }
+  else if (vabs_total_age >= 1 & vabs_total_age <2) {
+    score <- VPC_SocPercFunc1_2(vabs_total_age, vpc_soc_total_vscale_r)
+  }
   else if (vabs_total_age >= 2 & vabs_total_age <= 2.999) {
     score <- VPC_SocPercFunc2_2.999(vabs_total_age, vpc_soc_total_vscale_r)
   }
@@ -632,7 +927,7 @@ VPC_SocPercFuncTotal <- function(vabs_total_age, vpc_soc_total_vscale_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- VPC_SocPercFunc14_17.999(vabs_total_age, vpc_soc_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
@@ -640,6 +935,267 @@ VPC_SocPercFuncTotal <- function(vabs_total_age, vpc_soc_total_vscale_r){
 
 
 #vpc ABC percentile functions 
+VPC_AbcPercFunc0_1 <- function(vabs_total_age, vpc_abc_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 0 & vabs_total_age < 1) { 
+    if(vpc_abc_total_vscale_r>=60 & vpc_abc_total_vscale_r<=62){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=63 & vpc_abc_total_vscale_r<=64){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=65 & vpc_abc_total_vscale_r<=66){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=67 & vpc_abc_total_vscale_r<=68){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=69 & vpc_abc_total_vscale_r<=70){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=71 & vpc_abc_total_vscale_r<=72){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=73 & vpc_abc_total_vscale_r<=74){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=75 & vpc_abc_total_vscale_r<=76){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=77 & vpc_abc_total_vscale_r<=78){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=79 & vpc_abc_total_vscale_r<=80){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=81 & vpc_abc_total_vscale_r<=82){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=83 & vpc_abc_total_vscale_r<=84){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=85 & vpc_abc_total_vscale_r<=86){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=87 & vpc_abc_total_vscale_r<=88){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=89 & vpc_abc_total_vscale_r<=90){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=91 & vpc_abc_total_vscale_r<=92){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=93 & vpc_abc_total_vscale_r<=94){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=95 & vpc_abc_total_vscale_r<=97){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=98 & vpc_abc_total_vscale_r<=100){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=101 & vpc_abc_total_vscale_r<=103){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=104 & vpc_abc_total_vscale_r<=106){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=107 & vpc_abc_total_vscale_r<=109){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=110 & vpc_abc_total_vscale_r<=112){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=113 & vpc_abc_total_vscale_r<=115){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=116 & vpc_abc_total_vscale_r<=118){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=119 & vpc_abc_total_vscale_r<=120){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=121 & vpc_abc_total_vscale_r<=123){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=124 & vpc_abc_total_vscale_r<=125){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=126 & vpc_abc_total_vscale_r<=128){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=129 & vpc_abc_total_vscale_r<=131){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=132 & vpc_abc_total_vscale_r<=134){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=135 & vpc_abc_total_vscale_r<=137){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=138 & vpc_abc_total_vscale_r<=140){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=141 & vpc_abc_total_vscale_r<=144){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=145 & vpc_abc_total_vscale_r<=148){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=149 & vpc_abc_total_vscale_r<=151){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=152 & vpc_abc_total_vscale_r<=155){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=156 & vpc_abc_total_vscale_r<=159){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=160 & vpc_abc_total_vscale_r<=163){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=164 & vpc_abc_total_vscale_r<=167){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=168 & vpc_abc_total_vscale_r<=171){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=172 & vpc_abc_total_vscale_r<=175){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=176 & vpc_abc_total_vscale_r<=179){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=180 & vpc_abc_total_vscale_r<=184){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=185 & vpc_abc_total_vscale_r<=188){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=189 & vpc_abc_total_vscale_r<=193){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=194 & vpc_abc_total_vscale_r<=197){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=198 & vpc_abc_total_vscale_r<=202){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=203 & vpc_abc_total_vscale_r<=206){score<- "2"}
+    else if(vpc_abc_total_vscale_r>=207 & vpc_abc_total_vscale_r<=210){score<- "2"}
+    else if(vpc_abc_total_vscale_r>=211 & vpc_abc_total_vscale_r<=213){score<- "2"}
+    else if(vpc_abc_total_vscale_r>=214 & vpc_abc_total_vscale_r<=217){score<- "3"}
+    else if(vpc_abc_total_vscale_r>=218 & vpc_abc_total_vscale_r<=220){score<- "3"}
+    else if(vpc_abc_total_vscale_r>=221 & vpc_abc_total_vscale_r<=223){score<- "4"}
+    else if(vpc_abc_total_vscale_r>=224 & vpc_abc_total_vscale_r<=227){score<- "4"}
+    else if(vpc_abc_total_vscale_r>=228 & vpc_abc_total_vscale_r<=231){score<- "5"}
+    else if(vpc_abc_total_vscale_r>=232 & vpc_abc_total_vscale_r<=235){score<- "5"}
+    else if(vpc_abc_total_vscale_r>=236 & vpc_abc_total_vscale_r<=239){score<- "6"}
+    else if(vpc_abc_total_vscale_r>=240 & vpc_abc_total_vscale_r<=243){score<- "7"}
+    else if(vpc_abc_total_vscale_r>=244 & vpc_abc_total_vscale_r<=247){score<- "8"}
+    else if(vpc_abc_total_vscale_r>=248 & vpc_abc_total_vscale_r<=250){score<- "9"}
+    else if(vpc_abc_total_vscale_r>=251 & vpc_abc_total_vscale_r<=253){score<- "10"}
+    else if(vpc_abc_total_vscale_r>=254 & vpc_abc_total_vscale_r<=256){score<- "12"}
+    else if(vpc_abc_total_vscale_r>=257 & vpc_abc_total_vscale_r<=260){score<- "13"}
+    else if(vpc_abc_total_vscale_r>=261 & vpc_abc_total_vscale_r<=263){score<- "14"}
+    else if(vpc_abc_total_vscale_r>=264 & vpc_abc_total_vscale_r<=267){score<- "16"}
+    else if(vpc_abc_total_vscale_r>=268 & vpc_abc_total_vscale_r<=269){score<- "18"}
+    else if(vpc_abc_total_vscale_r>=270 & vpc_abc_total_vscale_r<=272){score<- "19"}
+    else if(vpc_abc_total_vscale_r>=273 & vpc_abc_total_vscale_r<=275){score<- "21"}
+    else if(vpc_abc_total_vscale_r>=276 & vpc_abc_total_vscale_r<=278){score<- "23"}
+    else if(vpc_abc_total_vscale_r>=279 & vpc_abc_total_vscale_r<=280){score<- "25"}
+    else if(vpc_abc_total_vscale_r>=281 & vpc_abc_total_vscale_r<=282){score<- "27"}
+    else if(vpc_abc_total_vscale_r>=283 & vpc_abc_total_vscale_r<=284){score<- "30"}
+    else if(vpc_abc_total_vscale_r>=285 & vpc_abc_total_vscale_r<=286){score<- "32"}
+    else if(vpc_abc_total_vscale_r>=287 & vpc_abc_total_vscale_r<=288){score<- "34"}
+    else if(vpc_abc_total_vscale_r>=289 & vpc_abc_total_vscale_r<=290){score<- "37"}
+    else if(vpc_abc_total_vscale_r>=291 & vpc_abc_total_vscale_r<=292){score<- "39"}
+    else if(vpc_abc_total_vscale_r>=293 & vpc_abc_total_vscale_r<=294){score<- "42"}
+    else if(vpc_abc_total_vscale_r>=295 & vpc_abc_total_vscale_r<=296){score<- "45"}
+    else if(vpc_abc_total_vscale_r>=297 & vpc_abc_total_vscale_r<=298){score<- "47"}
+    else if(vpc_abc_total_vscale_r>=299 & vpc_abc_total_vscale_r<=301){score<- "50"}
+    else if(vpc_abc_total_vscale_r>=302 & vpc_abc_total_vscale_r<=304){score<- "53"}
+    else if(vpc_abc_total_vscale_r>=305 & vpc_abc_total_vscale_r<=307){score<- "55"}
+    else if(vpc_abc_total_vscale_r>=308 & vpc_abc_total_vscale_r<=310){score<- "58"}
+    else if(vpc_abc_total_vscale_r>=311 & vpc_abc_total_vscale_r<=313){score<- "61"}
+    else if(vpc_abc_total_vscale_r>=314 & vpc_abc_total_vscale_r<=315){score<- "63"}
+    else if(vpc_abc_total_vscale_r>=316 & vpc_abc_total_vscale_r<=317){score<- "66"}
+    else if(vpc_abc_total_vscale_r>=318 & vpc_abc_total_vscale_r<=320){score<- "68"}
+    else if(vpc_abc_total_vscale_r>=321 & vpc_abc_total_vscale_r<=322){score<- "70"}
+    else if(vpc_abc_total_vscale_r>=323 & vpc_abc_total_vscale_r<=324){score<- "73"}
+    else if(vpc_abc_total_vscale_r>=325 & vpc_abc_total_vscale_r<=327){score<- "75"}
+    else if(vpc_abc_total_vscale_r>=328 & vpc_abc_total_vscale_r<=330){score<- "77"}
+    else if(vpc_abc_total_vscale_r>=331 & vpc_abc_total_vscale_r<=332){score<- "79"}
+    else if(vpc_abc_total_vscale_r>=333 & vpc_abc_total_vscale_r<=334){score<- "81"}
+    else if(vpc_abc_total_vscale_r>=335 & vpc_abc_total_vscale_r<=336){score<- "82"}
+    else if(vpc_abc_total_vscale_r>=337 & vpc_abc_total_vscale_r<=338){score<- "84"}
+    else if(vpc_abc_total_vscale_r>=339 & vpc_abc_total_vscale_r<=340){score<- "86"}
+    else if(vpc_abc_total_vscale_r>=341 & vpc_abc_total_vscale_r<=342){score<- "87"}
+    else if(vpc_abc_total_vscale_r>=343 & vpc_abc_total_vscale_r<=344){score<- "88"}
+    else if(vpc_abc_total_vscale_r>=345 & vpc_abc_total_vscale_r<=346){score<- "90"}
+    else if(vpc_abc_total_vscale_r>=347 & vpc_abc_total_vscale_r<=349){score<- "91"}
+    else if(vpc_abc_total_vscale_r>=350 & vpc_abc_total_vscale_r<=352){score<- "92"}
+    else if(vpc_abc_total_vscale_r>=353 & vpc_abc_total_vscale_r<=355){score<- "93"}
+    else if(vpc_abc_total_vscale_r>=356 & vpc_abc_total_vscale_r<=358){score<- "94"}
+    else if(vpc_abc_total_vscale_r>=359 & vpc_abc_total_vscale_r<=361){score<- "95"}
+    else if(vpc_abc_total_vscale_r>=362 & vpc_abc_total_vscale_r<=364){score<- "95"}
+    else if(vpc_abc_total_vscale_r>=365 & vpc_abc_total_vscale_r<=367){score<- "96"}
+    else if(vpc_abc_total_vscale_r>=368 & vpc_abc_total_vscale_r<=369){score<- "96"}
+    else if(vpc_abc_total_vscale_r>=370 & vpc_abc_total_vscale_r<=372){score<- "97"}
+    else if(vpc_abc_total_vscale_r>=373 & vpc_abc_total_vscale_r<=374){score<- "97"}
+    else if(vpc_abc_total_vscale_r>=375 & vpc_abc_total_vscale_r<=377){score<- "98"}
+    else if(vpc_abc_total_vscale_r>=378 & vpc_abc_total_vscale_r<=380){score<- "98"}
+    else if(vpc_abc_total_vscale_r>=381 & vpc_abc_total_vscale_r<=383){score<- "98"}
+    else if(vpc_abc_total_vscale_r>=384 & vpc_abc_total_vscale_r<=386){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=387 & vpc_abc_total_vscale_r<=389){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=390 & vpc_abc_total_vscale_r<=393){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=394 & vpc_abc_total_vscale_r<=398){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=399 & vpc_abc_total_vscale_r<=401){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=402 & vpc_abc_total_vscale_r<=406){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=407 & vpc_abc_total_vscale_r<=411){score<- ">99"}
+    else if(vpc_abc_total_vscale_r>=412 & vpc_abc_total_vscale_r<=420){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+VPC_AbcPercFunc1_2 <- function(vabs_total_age, vpc_abc_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 1 & vabs_total_age < 2) { 
+    if(vpc_abc_total_vscale_r>=60 & vpc_abc_total_vscale_r<=62){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=63 & vpc_abc_total_vscale_r<=64){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=65 & vpc_abc_total_vscale_r<=66){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=67 & vpc_abc_total_vscale_r<=68){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=69 & vpc_abc_total_vscale_r<=70){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=71 & vpc_abc_total_vscale_r<=72){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=73 & vpc_abc_total_vscale_r<=74){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=75 & vpc_abc_total_vscale_r<=76){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=77 & vpc_abc_total_vscale_r<=78){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=79 & vpc_abc_total_vscale_r<=80){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=81 & vpc_abc_total_vscale_r<=82){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=83 & vpc_abc_total_vscale_r<=84){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=85 & vpc_abc_total_vscale_r<=86){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=87 & vpc_abc_total_vscale_r<=88){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=89 & vpc_abc_total_vscale_r<=90){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=91 & vpc_abc_total_vscale_r<=92){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=93 & vpc_abc_total_vscale_r<=94){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=95 & vpc_abc_total_vscale_r<=97){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=98 & vpc_abc_total_vscale_r<=100){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=101 & vpc_abc_total_vscale_r<=103){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=104 & vpc_abc_total_vscale_r<=106){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=107 & vpc_abc_total_vscale_r<=109){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=110 & vpc_abc_total_vscale_r<=112){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=113 & vpc_abc_total_vscale_r<=115){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=116 & vpc_abc_total_vscale_r<=118){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=119 & vpc_abc_total_vscale_r<=120){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=121 & vpc_abc_total_vscale_r<=123){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=124 & vpc_abc_total_vscale_r<=125){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=126 & vpc_abc_total_vscale_r<=128){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=129 & vpc_abc_total_vscale_r<=131){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=132 & vpc_abc_total_vscale_r<=134){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=135 & vpc_abc_total_vscale_r<=137){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=138 & vpc_abc_total_vscale_r<=140){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=141 & vpc_abc_total_vscale_r<=144){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=145 & vpc_abc_total_vscale_r<=148){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=149 & vpc_abc_total_vscale_r<=151){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=152 & vpc_abc_total_vscale_r<=155){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=156 & vpc_abc_total_vscale_r<=159){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=160 & vpc_abc_total_vscale_r<=163){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=164 & vpc_abc_total_vscale_r<=167){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=168 & vpc_abc_total_vscale_r<=171){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=172 & vpc_abc_total_vscale_r<=175){score<- "<1"}
+    else if(vpc_abc_total_vscale_r>=176 & vpc_abc_total_vscale_r<=179){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=180 & vpc_abc_total_vscale_r<=184){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=185 & vpc_abc_total_vscale_r<=188){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=189 & vpc_abc_total_vscale_r<=193){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=194 & vpc_abc_total_vscale_r<=197){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=198 & vpc_abc_total_vscale_r<=202){score<- "1"}
+    else if(vpc_abc_total_vscale_r>=203 & vpc_abc_total_vscale_r<=206){score<- "2"}
+    else if(vpc_abc_total_vscale_r>=207 & vpc_abc_total_vscale_r<=210){score<- "2"}
+    else if(vpc_abc_total_vscale_r>=211 & vpc_abc_total_vscale_r<=213){score<- "2"}
+    else if(vpc_abc_total_vscale_r>=214 & vpc_abc_total_vscale_r<=217){score<- "3"}
+    else if(vpc_abc_total_vscale_r>=218 & vpc_abc_total_vscale_r<=220){score<- "3"}
+    else if(vpc_abc_total_vscale_r>=221 & vpc_abc_total_vscale_r<=223){score<- "4"}
+    else if(vpc_abc_total_vscale_r>=224 & vpc_abc_total_vscale_r<=227){score<- "4"}
+    else if(vpc_abc_total_vscale_r>=228 & vpc_abc_total_vscale_r<=231){score<- "5"}
+    else if(vpc_abc_total_vscale_r>=232 & vpc_abc_total_vscale_r<=235){score<- "5"}
+    else if(vpc_abc_total_vscale_r>=236 & vpc_abc_total_vscale_r<=239){score<- "6"}
+    else if(vpc_abc_total_vscale_r>=240 & vpc_abc_total_vscale_r<=243){score<- "7"}
+    else if(vpc_abc_total_vscale_r>=244 & vpc_abc_total_vscale_r<=247){score<- "8"}
+    else if(vpc_abc_total_vscale_r>=248 & vpc_abc_total_vscale_r<=250){score<- "9"}
+    else if(vpc_abc_total_vscale_r>=251 & vpc_abc_total_vscale_r<=253){score<- "10"}
+    else if(vpc_abc_total_vscale_r>=254 & vpc_abc_total_vscale_r<=256){score<- "12"}
+    else if(vpc_abc_total_vscale_r>=257 & vpc_abc_total_vscale_r<=260){score<- "13"}
+    else if(vpc_abc_total_vscale_r>=261 & vpc_abc_total_vscale_r<=263){score<- "14"}
+    else if(vpc_abc_total_vscale_r>=264 & vpc_abc_total_vscale_r<=267){score<- "16"}
+    else if(vpc_abc_total_vscale_r>=268 & vpc_abc_total_vscale_r<=269){score<- "18"}
+    else if(vpc_abc_total_vscale_r>=270 & vpc_abc_total_vscale_r<=272){score<- "19"}
+    else if(vpc_abc_total_vscale_r>=273 & vpc_abc_total_vscale_r<=275){score<- "21"}
+    else if(vpc_abc_total_vscale_r>=276 & vpc_abc_total_vscale_r<=278){score<- "23"}
+    else if(vpc_abc_total_vscale_r>=279 & vpc_abc_total_vscale_r<=280){score<- "25"}
+    else if(vpc_abc_total_vscale_r>=281 & vpc_abc_total_vscale_r<=282){score<- "27"}
+    else if(vpc_abc_total_vscale_r>=283 & vpc_abc_total_vscale_r<=284){score<- "30"}
+    else if(vpc_abc_total_vscale_r>=285 & vpc_abc_total_vscale_r<=286){score<- "32"}
+    else if(vpc_abc_total_vscale_r>=287 & vpc_abc_total_vscale_r<=288){score<- "34"}
+    else if(vpc_abc_total_vscale_r>=289 & vpc_abc_total_vscale_r<=290){score<- "37"}
+    else if(vpc_abc_total_vscale_r>=291 & vpc_abc_total_vscale_r<=292){score<- "39"}
+    else if(vpc_abc_total_vscale_r>=293 & vpc_abc_total_vscale_r<=294){score<- "42"}
+    else if(vpc_abc_total_vscale_r>=295 & vpc_abc_total_vscale_r<=296){score<- "45"}
+    else if(vpc_abc_total_vscale_r>=297 & vpc_abc_total_vscale_r<=298){score<- "47"}
+    else if(vpc_abc_total_vscale_r>=299 & vpc_abc_total_vscale_r<=301){score<- "50"}
+    else if(vpc_abc_total_vscale_r>=302 & vpc_abc_total_vscale_r<=304){score<- "53"}
+    else if(vpc_abc_total_vscale_r>=305 & vpc_abc_total_vscale_r<=307){score<- "55"}
+    else if(vpc_abc_total_vscale_r>=308 & vpc_abc_total_vscale_r<=310){score<- "58"}
+    else if(vpc_abc_total_vscale_r>=311 & vpc_abc_total_vscale_r<=313){score<- "61"}
+    else if(vpc_abc_total_vscale_r>=314 & vpc_abc_total_vscale_r<=315){score<- "63"}
+    else if(vpc_abc_total_vscale_r>=316 & vpc_abc_total_vscale_r<=317){score<- "66"}
+    else if(vpc_abc_total_vscale_r>=318 & vpc_abc_total_vscale_r<=320){score<- "68"}
+    else if(vpc_abc_total_vscale_r>=321 & vpc_abc_total_vscale_r<=322){score<- "70"}
+    else if(vpc_abc_total_vscale_r>=323 & vpc_abc_total_vscale_r<=324){score<- "73"}
+    else if(vpc_abc_total_vscale_r>=325 & vpc_abc_total_vscale_r<=327){score<- "75"}
+    else if(vpc_abc_total_vscale_r>=328 & vpc_abc_total_vscale_r<=330){score<- "77"}
+    else if(vpc_abc_total_vscale_r>=331 & vpc_abc_total_vscale_r<=332){score<- "79"}
+    else if(vpc_abc_total_vscale_r>=333 & vpc_abc_total_vscale_r<=334){score<- "81"}
+    else if(vpc_abc_total_vscale_r>=335 & vpc_abc_total_vscale_r<=336){score<- "82"}
+    else if(vpc_abc_total_vscale_r>=337 & vpc_abc_total_vscale_r<=338){score<- "84"}
+    else if(vpc_abc_total_vscale_r>=339 & vpc_abc_total_vscale_r<=340){score<- "86"}
+    else if(vpc_abc_total_vscale_r>=341 & vpc_abc_total_vscale_r<=342){score<- "87"}
+    else if(vpc_abc_total_vscale_r>=343 & vpc_abc_total_vscale_r<=344){score<- "88"}
+    else if(vpc_abc_total_vscale_r>=345 & vpc_abc_total_vscale_r<=346){score<- "90"}
+    else if(vpc_abc_total_vscale_r>=347 & vpc_abc_total_vscale_r<=349){score<- "91"}
+    else if(vpc_abc_total_vscale_r>=350 & vpc_abc_total_vscale_r<=352){score<- "92"}
+    else if(vpc_abc_total_vscale_r>=353 & vpc_abc_total_vscale_r<=355){score<- "93"}
+    else if(vpc_abc_total_vscale_r>=356 & vpc_abc_total_vscale_r<=358){score<- "94"}
+    else if(vpc_abc_total_vscale_r>=359 & vpc_abc_total_vscale_r<=361){score<- "95"}
+    else if(vpc_abc_total_vscale_r>=362 & vpc_abc_total_vscale_r<=364){score<- "95"}
+    else if(vpc_abc_total_vscale_r>=365 & vpc_abc_total_vscale_r<=367){score<- "96"}
+    else if(vpc_abc_total_vscale_r>=368 & vpc_abc_total_vscale_r<=369){score<- "96"}
+    else if(vpc_abc_total_vscale_r>=370 & vpc_abc_total_vscale_r<=372){score<- "97"}
+    else if(vpc_abc_total_vscale_r>=373 & vpc_abc_total_vscale_r<=374){score<- "97"}
+    else if(vpc_abc_total_vscale_r>=375 & vpc_abc_total_vscale_r<=377){score<- "98"}
+    else if(vpc_abc_total_vscale_r>=378 & vpc_abc_total_vscale_r<=380){score<- "98"}
+    else if(vpc_abc_total_vscale_r>=381 & vpc_abc_total_vscale_r<=383){score<- "98"}
+    else if(vpc_abc_total_vscale_r>=384 & vpc_abc_total_vscale_r<=386){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=387 & vpc_abc_total_vscale_r<=389){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=390 & vpc_abc_total_vscale_r<=393){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=394 & vpc_abc_total_vscale_r<=398){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=399 & vpc_abc_total_vscale_r<=401){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=402 & vpc_abc_total_vscale_r<=406){score<- "99"}
+    else if(vpc_abc_total_vscale_r>=407 & vpc_abc_total_vscale_r<=411){score<- ">99"}
+    else if(vpc_abc_total_vscale_r>=412 & vpc_abc_total_vscale_r<=420){score<- ">99"}
+    else{score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+    
 VPC_AbcPercFunc2_2.999 <- function(vabs_total_age, vpc_abc_total_vscale_r){
   score <- c()
   if (vabs_total_age >= 2 & vabs_total_age <= 2.999) { 
@@ -848,6 +1404,12 @@ VPC_AbcPercFunc14_17.999 <- function(vabs_total_age, vpc_abc_total_vscale_r){
 VPC_AbcPercFuncTotal <- function(vabs_total_age, vpc_abc_total_vscale_r){
   score <- c()
   if(is.na(vabs_total_age) | is.na(vpc_abc_total_vscale_r)) {score <- NA}
+  else if (vabs_total_age >= 0 & vabs_total_age <1) {
+    score <- VPC_AbcPercFunc0_1(vabs_total_age, vpc_abc_total_vscale_r)
+  }
+  else if (vabs_total_age >= 1 & vabs_total_age <2) {
+    score <- VPC_AbcPercFunc1_2(vabs_total_age, vpc_abc_total_vscale_r)
+  }
   else if (vabs_total_age >= 2 & vabs_total_age <= 2.999) {
     score <- VPC_AbcPercFunc2_2.999(vabs_total_age, vpc_abc_total_vscale_r)
   }
@@ -857,13 +1419,120 @@ VPC_AbcPercFuncTotal <- function(vabs_total_age, vpc_abc_total_vscale_r){
   else if (vabs_total_age >= 14 & vabs_total_age <= 17.999) {
     score <- VPC_AbcPercFunc14_17.999(vabs_total_age, vpc_abc_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 18) {score <- NA}
+  else if (vabs_total_age > 18) {score <- NA}
   else {score <- NA} 
   return(score)
 }
 
 
 #vpc MOT percentile functions 
+VPC_MotPercFunc0_1 <- function(vabs_total_age, vpc_motor_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 0 & vabs_total_age <1) { 
+if(vpc_motor_total_vscale_r>=2 & vpc_motor_total_vscale_r<=4){score<- "<1"}
+else if(vpc_motor_total_vscale_r==5){score<- "<1"}
+else if(vpc_motor_total_vscale_r==6){score<- "<1"}
+else if(vpc_motor_total_vscale_r==7){score<- "<1"}
+else if(vpc_motor_total_vscale_r==8){score<- "<1"}
+else if(vpc_motor_total_vscale_r==9){score<- "<1"}
+else if(vpc_motor_total_vscale_r==10){score<- "<1"}
+else if(vpc_motor_total_vscale_r==11){score<- "<1"}
+else if(vpc_motor_total_vscale_r==12){score<- "<1"}
+else if(vpc_motor_total_vscale_r==13){score<- "<1"}
+else if(vpc_motor_total_vscale_r==14){score<- "<1"}
+else if(vpc_motor_total_vscale_r==15){score<- "<1"}
+else if(vpc_motor_total_vscale_r==16){score<- "<1"}
+else if(vpc_motor_total_vscale_r==17){score<- "<1"}
+else if(vpc_motor_total_vscale_r==18){score<- "1"}
+else if(vpc_motor_total_vscale_r==19){score<- "1"}
+else if(vpc_motor_total_vscale_r==20){score<- "2"}
+else if(vpc_motor_total_vscale_r==21){score<- "3"}
+else if(vpc_motor_total_vscale_r==22){score<- "4"}
+else if(vpc_motor_total_vscale_r==23){score<- "5"}
+else if(vpc_motor_total_vscale_r==24){score<- "7"}
+else if(vpc_motor_total_vscale_r==25){score<- "10"}
+else if(vpc_motor_total_vscale_r==26){score<- "14"}
+else if(vpc_motor_total_vscale_r==27){score<- "21"}
+else if(vpc_motor_total_vscale_r==28){score<- "30"}
+else if(vpc_motor_total_vscale_r==29){score<- "42"}
+else if(vpc_motor_total_vscale_r==30){score<- "53"}
+else if(vpc_motor_total_vscale_r==31){score<- "61"}
+else if(vpc_motor_total_vscale_r==32){score<- "73"}
+else if(vpc_motor_total_vscale_r==33){score<- "81"}
+else if(vpc_motor_total_vscale_r==34){score<- "86"}
+else if(vpc_motor_total_vscale_r==35){score<- "90"}
+else if(vpc_motor_total_vscale_r==36){score<- "93"}
+else if(vpc_motor_total_vscale_r==37){score<- "95"}
+else if(vpc_motor_total_vscale_r==38){score<- "96"}
+else if(vpc_motor_total_vscale_r==39){score<- "98"}
+else if(vpc_motor_total_vscale_r==40){score<- "98"}
+else if(vpc_motor_total_vscale_r==41){score<- "99"}
+else if(vpc_motor_total_vscale_r==42){score<- "99"}
+else if(vpc_motor_total_vscale_r==43){score<- "99"}
+else if(vpc_motor_total_vscale_r>=44 & vpc_motor_total_vscale_r<=48){score<- ">99"}
+    else {score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+VPC_MotPercFunc1_2 <- function(vabs_total_age, vpc_motor_total_vscale_r){
+  score <- c()
+  if (vabs_total_age >= 1 & vabs_total_age <2) { 
+    if(vpc_motor_total_vscale_r==2){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==3){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==4){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==5){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==6){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==7){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==8){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==9){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==10){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==11){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==12){score<- "<1"}
+    else if(vpc_motor_total_vscale_r==13){score<- "1"}
+    else if(vpc_motor_total_vscale_r==14){score<- "1"}
+    else if(vpc_motor_total_vscale_r==15){score<- "2"}
+    else if(vpc_motor_total_vscale_r==16){score<- "3"}
+    else if(vpc_motor_total_vscale_r==17){score<- "4"}
+    else if(vpc_motor_total_vscale_r==18){score<- "4"}
+    else if(vpc_motor_total_vscale_r==19){score<- "5"}
+    else if(vpc_motor_total_vscale_r==20){score<- "7"}
+    else if(vpc_motor_total_vscale_r==21){score<- "9"}
+    else if(vpc_motor_total_vscale_r==22){score<- "12"}
+    else if(vpc_motor_total_vscale_r==23){score<- "14"}
+    else if(vpc_motor_total_vscale_r==24){score<- "16"}
+    else if(vpc_motor_total_vscale_r==25){score<- "19"}
+    else if(vpc_motor_total_vscale_r==26){score<- "23"}
+    else if(vpc_motor_total_vscale_r==27){score<- "30"}
+    else if(vpc_motor_total_vscale_r==28){score<- "37"}
+    else if(vpc_motor_total_vscale_r==29){score<- "45"}
+    else if(vpc_motor_total_vscale_r==30){score<- "50"}
+    else if(vpc_motor_total_vscale_r==31){score<- "55"}
+    else if(vpc_motor_total_vscale_r==32){score<- "63"}
+    else if(vpc_motor_total_vscale_r==33){score<- "70"}
+    else if(vpc_motor_total_vscale_r==34){score<- "77"}
+    else if(vpc_motor_total_vscale_r==35){score<- "82"}
+    else if(vpc_motor_total_vscale_r==36){score<- "87"}
+    else if(vpc_motor_total_vscale_r==37){score<- "90"}
+    else if(vpc_motor_total_vscale_r==38){score<- "92"}
+    else if(vpc_motor_total_vscale_r==39){score<- "94"}
+    else if(vpc_motor_total_vscale_r==40){score<- "95"}
+    else if(vpc_motor_total_vscale_r==41){score<- "96"}
+    else if(vpc_motor_total_vscale_r==42){score<- "97"}
+    else if(vpc_motor_total_vscale_r==43){score<- "98"}
+    else if(vpc_motor_total_vscale_r==44){score<- "99"}
+    else if(vpc_motor_total_vscale_r==45){score<- "99"}
+    else if(vpc_motor_total_vscale_r==46){score<- "99"}
+    else if(vpc_motor_total_vscale_r==47){score<- ">99"}
+    else if(vpc_motor_total_vscale_r==48){score<- ">99"}
+    else {score <- NA}
+  }
+  else {score <- NA}
+  return(score)
+}
+
+
 VPC_MotPercFunc2_2.999 <- function(vabs_total_age, vpc_motor_total_vscale_r){
   score <- c()
   if (vabs_total_age >= 2 & vabs_total_age <= 2.999) { 
@@ -975,13 +1644,19 @@ VPC_MotPercFunc3_9.999 <- function(vabs_total_age, vpc_motor_total_vscale_r){
 VPC_MotPercFuncTotal <- function(vabs_total_age, vpc_motor_total_vscale_r){
   score <- c()
   if(is.na(vabs_total_age) | is.na(vpc_motor_total_vscale_r)) {score <- NA}
+  else if (vabs_total_age >= 0 & vabs_total_age <1) {
+    score <- VPC_MotPercFunc0_1(vabs_total_age, vpc_motor_total_vscale_r)
+  }
+  else if (vabs_total_age >= 1 & vabs_total_age <2) {
+    score <- VPC_MotPercFunc1_2(vabs_total_age, vpc_motor_total_vscale_r)
+  }
   else if (vabs_total_age >= 2 & vabs_total_age <= 2.999) {
     score <- VPC_MotPercFunc2_2.999(vabs_total_age, vpc_motor_total_vscale_r)
   }
   else if (vabs_total_age >= 3 & vabs_total_age <= 13.999) {
     score <- VPC_MotPercFunc3_9.999(vabs_total_age, vpc_motor_total_vscale_r)
   }
-  else if (vabs_total_age < 2 | vabs_total_age > 10) {score <- NA}
+  else if (vabs_total_age > 10) {score <- NA}
   else {score <- NA} 
   return(score)
 }
