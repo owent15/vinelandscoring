@@ -37,7 +37,7 @@ find_ceiling <- function(column) {
     if (column[i] == 0) {
       consec_zeros <- consec_zeros + 1
       if (consec_zeros == 4) {
-        return(i - 4)
+        return(i - 3)
       }
     } else {
       consec_zeros <- 0
